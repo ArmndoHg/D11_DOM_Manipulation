@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation</title>
     <style>
+
         .newAmazonLink{
             font-size: large;
             color: brown;
@@ -21,7 +22,7 @@
             </tr>
             <tr>
                 <td><img src=https://m.media-amazon.com/images/I/51218VNkIOL.jpg width="15%"></td>
-                <td><a href="https://www.amazon.com/-/es/Avocados-org%C3%A1nicos-M%C3%A9xico-Natural-Organic/dp/B00D199PI0/ref=sr_1_4?c=ts&keywords=fresh+avocados&qid=1665407422&qu=eyJxc2MiOiI0LjQ0IiwicXNhIjoiMy4yMCIsInFzcCI6IjMuMTMifQ%3D%3D&s=grocery&sr=1-4&ts_id=6872643011"></a>> Avocados!</td>
+                <td><a href="https://www.amazon.com/-/es/Avocados-org%C3%A1nicos-M%C3%A9xico-Natural-Organic/dp/B00D199PI0/ref=sr_1_4?c=ts&keywords=fresh+avocados&qid=1665407422&qu=eyJxc2MiOiI0LjQ0IiwicXNhIjoiMy4yMCIsInFzcCI6IjMuMTMifQ%3D%3D&s=grocery&sr=1-4&ts_id=6872643011">Avocados</a></td>
                 <td>Best avocados in the country</td>
                 <td>$20kg</td>
             </tr>
@@ -75,9 +76,10 @@
     }
 
     const amazonLinks =  function(){
-        let ntags = document.querySelectorAll("a")
-        for (let i = 0; i<ntags.lenght; i++){
-            ntags[i].classList.add('newAmazonLink')
+        let nTags = document.querySelectorAll("a")
+
+        for (let i = 0; i <nTags.length; i++){
+            nTags[i].classList.add('newAmazonLink')
         }
     }
 
