@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .newAmazonLink{
+            font-size: large;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>GREEN-WORLD</h1>
+    <table>
+        <tbody>
+            <tr>
+                <th>Top 5 Lastest Sales</th>
+            </tr>
+            <tr>
+                <td><img src=https://m.media-amazon.com/images/I/51218VNkIOL.jpg width="15%"></td>
+                <td><a href="https://www.amazon.com/-/es/Avocados-org%C3%A1nicos-M%C3%A9xico-Natural-Organic/dp/B00D199PI0/ref=sr_1_4?c=ts&keywords=fresh+avocados&qid=1665407422&qu=eyJxc2MiOiI0LjQ0IiwicXNhIjoiMy4yMCIsInFzcCI6IjMuMTMifQ%3D%3D&s=grocery&sr=1-4&ts_id=6872643011"></a>> Avocados!</td>
+                <td>Best avocados in the country</td>
+                <td>$20kg</td>
+            </tr>
+            <tr>
+                <td><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bright_red_tomato_and_cross_section02.jpg/1024px-Bright_red_tomato_and_cross_section02.jpg width="15%"></td>
+                <td><a href="https://www.amazon.com/-/es/TOMATO-VEGETABLE-9LB-WHOLEFOOD-PRODUCE-EXPRESS-SHIPPING/dp/B0799VNL2Z/ref=sr_1_14?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2S64ZMGLI8VOM&keywords=tomato&qid=1665408086&qu=eyJxc2MiOiI1LjQ0IiwicXNhIjoiNS4zNyIsInFzcCI6IjUuMjAifQ%3D%3D&sprefix=tomate%2Caps%2C210&sr=8-14">Tomtate</a></td>
+                <td>Even better than in your garder</td>
+                <td>$5kg</td>
+            </tr>
+            <tr>
+                <td><img src=https://m.media-amazon.com/images/I/41-xw+zQhWL._AC_.jpg width="15%"></td>
+                <td><a href="https://www.amazon.pl/kajal-egzotyczne-zielone-gotowania-plaintain/dp/B09NHVWLN9/ref=asc_df_B09NHVWLN9/?tag=plshogostdde-21&linkCode=df0&hvadid=540290251165&hvpos=&hvnetw=g&hvrand=7018801358312104054&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1011430&hvtargid=pla-1611259816292&psc=1">Banana</a></td>
+                <td>Are you goiing to miss it?</td>
+                <td>$15kg</td>
+            </tr>
+            <tr>
+                <td><img src="https://m.media-amazon.com/images/I/71qGU19WkML._SL1500_.jpg" width="15%"></td>
+                <td><a href="https://www.amazon.com/-/es/Shelly-Picks-dulce-libra-manzanas/dp/B01M02WVTA/ref=sr_1_20?c=ts&keywords=fresh+apples&qid=1665408586&qu=eyJxc2MiOiI1LjU0IiwicXNhIjoiNS4xMyIsInFzcCI6IjUuMTcifQ%3D%3D&s=grocery&sr=1-20&ts_id=724694011">Cucumber</a></td>
+                <td>Ready</td>
+                <td>$5kg</td>
+            </tr>
+            <tr>
+                <td><img src="https://m.media-amazon.com/images/I/81GPxbG2WDL._SL1500_.jpg" width="15%"></td>
+                <td><a href="https://www.amazon.com/-/es/Orange-Valencia-Organic-4-Libra/dp/B0787Y5DV4/ref=sr_1_3?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=6V9RX1XXS2OR&keywords=oranges&qid=1665408738&qu=eyJxc2MiOiI0LjU5IiwicXNhIjoiNC40MCIsInFzcCI6IjQuNjAifQ%3D%3D&sprefix=oranges%2Caps%2C226&sr=8-3">Orange</a></td>
+                <td>Juicy, Juicy</td>
+                <td>$6kg</td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <div>
+            46-020 Opole, Opolskie
+        </div>
+        <div>
+
+        </div>
+    </footer>
+    <input type="text">
+   <script>
+
+    const newh1 = function(){
+        document.querySelector("h1").innerText = "Done";
+    };
+
+    const backGround = function(){
+        document.querySelector("body").style.backgroundColor = 'lightcoral'
+    }
+
+    const fake = function(){
+        document.querySelector('footer').innerText = "Fake Address"
+    }
+
+    const amazonLinks =  function(){
+        let ntags = document.querySelectorAll("a")
+        for (let i = 0; i<ntags.lenght; i++){
+            ntags[i].classList.add('newAmazonLink')
+        }
+    }
+
+   </script> 
+</body>
+</html>
