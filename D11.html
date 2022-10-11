@@ -23,6 +23,11 @@
             border: solid rgb(96, 98, 117) 1px;
         }
 
+        .visibility{
+            visibility: hidden;
+
+        }
+
     </style>
 </head>
 <body>
@@ -95,6 +100,29 @@
         }
     }
 
+    const toggCss = function(){
+        let imgAll = document.querySelectorAll("img")
+        for (let i = 0; i <imgAll.length; i++){
+            const singleImg = imgAll[i];
+            singleImg.classList.toggle('visibility')
+        }
+    }
+
+    const priceColor = function(){
+        const color1 = Math.round(Math.random()*580)
+        const color2 = Math.round(Math.random()*580)
+        const color3 = Math.round(Math.random()*580)
+        return 'rgb(' + color1 + ',' + color2 + ',' + color3 + ')';
+    }
+    
+    const rmPriceColor = function(){
+        const rmColor = priceColor();
+        let prices = document.querySelectorAll("price")
+        for (let i = 0; i<prices.length; i++){
+            let singlePrice = prices[i]
+            singlePrice.style.color = rmColor
+        }
+    }
    </script> 
 </body>
 </html>
